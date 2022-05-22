@@ -1,0 +1,20 @@
+{
+  "name": "bookstudy-object",
+  "version": "1.0.0",
+  "description": "오브젝트: 코드로 이해하는 객체지향 설계 (조영호)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:hongbiii/bookstudy-object.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^4.6.4"
+  }
+}
