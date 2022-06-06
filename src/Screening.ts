@@ -1,4 +1,7 @@
+import Customer from "./Customer";
+import Money from "./Money";
 import Movie from "./Movie";
+import Reservation from "./Reservation";
 
 export default class Screening {
   private movie: Movie;
@@ -21,5 +24,13 @@ export default class Screening {
 
   getMovieFee() {
     return this.movie.getFee();
+  }
+
+  reserve(customer: Customer, audienceCount: number): Reservation {
+    return new Reservation(customer, this, this.calculateFee(audienceCount), audienceCount);
+  }
+
+  private calculateFee(audienceCount: number): Money {
+    return this.movie.calculateMovieFee(this).times(audienceCount);
   }
 }
